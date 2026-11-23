@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tita Piva Arquitetura & Urbanismo | Carazinho - RS | CAU/RS A466620</title>
+    <meta name="description" content="Mais de 25 anos de experiência em projetos residenciais, comerciais e de interiores em Carazinho - RS. Arquitetura funcional, consciente e feita para a vida real.">
+    
+    <!-- Google Fonts: Cormorant Garamond (Clássica Editorial) + Plus Jakarta Sans (Moderna e Limpa) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração de Cores e Fontes Personalizadas -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        linho: {
+                            50: '#FAF8F5',
+                            100: '#F4F0EA',
+                            200: '#E8E0D4',
+                            300: '#D5C7B4',
+                        },
+                        musgo: {
+                            DEFAULT: '#2F4337',
+                            light: '#3E5748',
+                            dark: '#1E2C24',
+                            soft: '#EBF0EC',
+                        },
+                        terracota: {
+                            DEFAULT: '#B06A4B',
+                            light: '#C47F60',
+                            dark: '#8F5136',
+                            soft: '#F7EDE8',
+                        },
+                        grafite: {
+                            DEFAULT: '#2A2B2A',
+                            muted: '#585A58',
+                            light: '#7A7D7A',
+                        },
+                        whatsapp: {
+                            DEFAULT: '#1E8E4E',
+                            hover: '#17753F',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 35px -5px rgba(42, 43, 42, 0.06)',
+                        'card': '0 15px 40px -10px rgba(47, 67, 55, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Detalhes finos de textura e seleção */
+        body {
+            background-color: #FAF8F5;
+            color: #2A2B2A;
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        }
+        ::selection {
+            background-color: #B06A4B;
+            color: #FAF8F5;
+        }
+        .architectural-grid {
+            background-image: radial-gradient(#D5C7B4 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+        /* Animação sutil para o botão flutuante */
+        @keyframes pulse-gentle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.04); }
+        }
+        .animate-whatsapp {
+            animation: pulse-gentle 3.5s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-terracota selection:text-white">
+
+    <!-- 1. BARRA SUPERIOR / TOPO DE CREDIBILIDADE -->
+    <div class="bg-musgo text-linho-50 text-xs sm:text-sm py-2.5 px-4 border-b border-musgo-light/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left">
+            <p class="font-medium tracking-wide flex items-center justify-center sm:justify-start gap-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-terracota-light"></span>
+                Mais de 25 anos transformando espaços em Carazinho - RS e Região <span class="hidden md:inline text-linho-300">•</span> <strong class="font-semibold text-linho-200">CAU/RS A466620</strong>
+            </p>
+            <div class="hidden lg:flex items-center gap-4 text-xs text-linho-200">
+                <span class="flex items-center gap-1">
+                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                    5.0 no Google
+                </span>
+                <span>|</span>
+                <a href="https://instagram.com/titapiva.arq" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1">
+                    <i data-lucide="instagram" class="w-3.5 h-3.5"></i>
+                    @titapiva.arq
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. CABEÇALHO (NAVBAR) -->
+    <header class="sticky top-0 z-40 bg-linho-50/95 backdrop-blur-md border-b border-linho-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo / Nome Estilizado -->
+                <a href="#inicio" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-musgo text-linho-50 flex items-center justify-center font-serif text-xl font-semibold tracking-tighter shadow-sm group-hover:bg-terracota transition-colors duration-300">
+                        TP
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif text-2xl sm:text-[26px] font-semibold tracking-tight text-grafite leading-none">
+                            Tita Piva <span class="text-terracota font-normal">|</span> <span class="font-normal text-musgo">Arquitetura</span>
+                        </span>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-grafite-muted mt-1">
+                            Urbanismo & Interiores • CAU/RS A466620
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Links de Navegação Desktop -->
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-grafite">
+                    <a href="#inicio" class="hover:text-terracota transition-colors py-2">Início</a>
+                    
+                    <!-- Dropdown Projetos -->
+                    <div class="relative group">
+                        <a href="#projetos" class="flex items-center gap-1 hover:text-terracota transition-colors py-2">
+                            Projetos
+                            <i data-lucide="chevron-down" class="w-4 h-4 text-grafite-muted group-hover:text-terracota transition-transform group-hover:rotate-180"></i>
+                        </a>
+                        <div class="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <div class="bg-white rounded-xl shadow-card border border-linho-200 p-2 flex flex-col">
+                                <a href="#projeto-residencial" class="px-3.5 py-2.5 rounded-lg hover:bg-linho-100 text-grafite hover:text-musgo transition-colors flex items-center justify-between">
+                                    <span>Residencial</span>
+                                    <i data-lucide="home" class="w-3.5 h-3.5 text-terracota"></i>
+                                </a>
+                                <a href="#projeto-comercial" class="px-3.5 py-2.5 rounded-lg hover:bg-linho-100 text-grafite hover:text-musgo transition-colors flex items-center justify-between">
+                                    <span>Comercial</span>
+                                    <i data-lucide="building-2" class="w-3.5 h-3.5 text-terracota"></i>
+                                </a>
+                                <a href="#projeto-interiores" class="px-3.5 py-2.5 rounded-lg hover:bg-linho-100 text-grafite hover:text-musgo transition-colors flex items-center justify-between">
+                                    <span>Interiores & Reformas</span>
+                                    <i data-lucide="lamp-desk" class="w-3.5 h-3.5 text-terracota"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#metodologia" class="hover:text-terracota transition-colors py-2">Metodologia</a>
+                    <a href="#sobre" class="hover:text-terracota transition-colors py-2">Sobre Tita Piva</a>
+                    <a href="#contato" class="hover:text-terracota transition-colors py-2">Contato</a>
+                </nav>
+
+                <!-- CTA Rápido Desktop + Botão Menu Mobile -->
+                <div class="flex items-center gap-3">
+                    <button onclick="openBudgetModal('Atendimento Geral')" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-musgo hover:bg-musgo-light text-linho-50 text-sm font-medium transition-all shadow-sm">
+                        <i data-lucide="calendar-check" class="w-4 h-4 text-linho-200"></i>
+                        <span>Agendar Conversa</span>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobile-menu-btn" aria-label="Abrir Menu" class="lg:hidden p-2.5 rounded-xl border border-linho-200 text-grafite hover:bg-linho-100 transition-colors">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Expansível -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-linho-50 border-b border-linho-200 px-4 pt-2 pb-6 space-y-2">
+            <a href="#inicio" class="mobile-link block px-4 py-3 rounded-xl font-medium text-grafite hover:bg-linho-100">Início</a>
+            <div class="px-4 py-2">
+                <span class="text-xs font-semibold uppercase tracking-wider text-grafite-muted">Projetos</span>
+                <div class="mt-2 pl-3 border-l-2 border-terracota/40 space-y-2">
+                    <a href="#projeto-residencial" class="mobile-link block py-1.5 text-sm text-grafite hover:text-terracota">Projetos Residenciais</a>
+                    <a href="#projeto-comercial" class="mobile-link block py-1.5 text-sm text-grafite hover:text-terracota">Arquitetura Comercial</a>
+                    <a href="#projeto-interiores" class="mobile-link block py-1.5 text-sm text-grafite hover:text-terracota">Design de Interiores e Reformas</a>
+                </div>
+            </div>
+            <a href="#metodologia" class="mobile-link block px-4 py-3 rounded-xl font-medium text-grafite hover:bg-linho-100">Metodologia</a>
+            <a href="#sobre" class="mobile-link block px-4 py-3 rounded-xl font-medium text-grafite hover:bg-linho-100">Sobre Tita Piva</a>
+            <a href="#contato" class="mobile-link block px-4 py-3 rounded-xl font-medium text-grafite hover:bg-linho-100">Contato e Localização</a>
+            <div class="pt-2 px-4">
+                <button onclick="openBudgetModal('Atendimento Mobile')" class="w-full py-3.5 px-4 rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white font-semibold text-sm flex items-center justify-center gap-2 shadow-md">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    Solicitar Orçamento no WhatsApp
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. SEÇÃO PRINCIPAL (HERO SECTION) -->
+    <section id="inicio" class="relative overflow-hidden pt-10 pb-20 lg:pt-16 lg:pb-28 architectural-grid">
+        <!-- Detalhe decorativo de fundo -->
+        <div class="absolute top-0 right-0 -translate-y-12 translate-x-1/4 w-[500px] h-[500px] rounded-full bg-linho-200/50 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[400px] h-[400px] rounded-full bg-terracota-soft/60 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+                
+                <!-- Coluna de Texto (7 colunas) -->
+                <div class="lg:col-span-7 space-y-7">
+                    <!-- Selo de Essência -->
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white border border-linho-200 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-terracota"></span>
+                        <span class="text-xs sm:text-sm font-medium text-musgo tracking-wide">
+                            Escolhas conscientes + vida real • Carazinho, RS
+                        </span>
+                    </div>
+
+                    <!-- Título de Impacto -->
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-[62px] font-semibold text-grafite leading-[1.08] tracking-tight">
+                        Arquitetura funcional, consciente e feita para a <span class="italic text-terracota font-normal">vida real.</span>
+                    </h1>
+
+                    <!-- Subtítulo -->
+                    <p class="text-base sm:text-lg lg:text-xl text-grafite-muted leading-relaxed max-w-2xl font-normal">
+                        Mais de 25 anos de experiência em projetos residenciais, comerciais e de interiores em Carazinho. Segurança técnica e sensibilidade em cada detalhe.
+                    </p>
+
+                    <!-- Botão de Destaque Principal (CTA) + Secundário -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <button onclick="openBudgetModal('Orçamento Geral (Hero)')" class="inline-flex items-center justify-center gap-3 px-7 py-4 rounded-2xl bg-whatsapp hover:bg-whatsapp-hover text-white font-semibold text-base shadow-lg shadow-whatsapp/20 transition-all duration-300 transform hover:-translate-y-0.5">
+                            <!-- Ícone WhatsApp SVG Nítido -->
+                            <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.473 1.332 4.986L2 22l5.184-1.359a9.927 9.927 0 0 0 4.847 1.258h.004c5.515 0 9.969-4.454 9.969-9.969 0-2.664-1.037-5.168-2.921-7.052A9.903 9.903 0 0 0 12.031 2zm5.822 14.274c-.246.693-1.428 1.326-1.984 1.41-.514.078-1.164.111-1.879-.116-.434-.138-.99-.322-1.703-.63-2.996-1.294-4.953-4.312-5.103-4.512-.149-.2-1.219-1.622-1.219-3.094 0-1.472.771-2.196 1.045-2.495.274-.299.598-.374.797-.374.199 0 .398.002.573.01.184.009.43-.07.673.514.249.598.847 2.07.921 2.22.075.149.125.324.025.523-.1.2-.149.324-.299.498-.149.175-.314.39-.448.524-.149.149-.305.311-.131.61.174.299.774 1.277 1.662 2.069 1.142 1.018 2.104 1.334 2.403 1.483.299.15.473.125.648-.075.174-.199.747-.872.946-1.171.2-.299.399-.249.673-.15.274.1 1.744.822 2.043.972.299.15.498.224.573.349.074.125.074.722-.172 1.415z"/>
+                            </svg>
+                            <span>Solicitar Orçamento de Projeto no WhatsApp</span>
+                        </button>
+
+                        <a href="#metodologia" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-white hover:bg-linho-100 text-grafite border border-linho-300 font-medium text-base transition-colors">
+                            <span>Como funciona o processo</span>
+                            <i data-lucide="arrow-down-right" class="w-4 h-4 text-terracota"></i>
+                        </a>
+                    </div>
+
+                    <!-- Indicadores Rápidos de Confiança -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 sm:gap-8 border-t border-linho-200/90 max-w-xl">
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-musgo">+25 anos</p>
+                            <p class="text-xs sm:text-sm text-grafite-muted mt-0.5">De atuação sólida</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-musgo flex items-center gap-1">
+                                5.0 <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400 inline"></i>
+                            </p>
+                            <p class="text-xs sm:text-sm text-grafite-muted mt-0.5">Avaliação no Google</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-musgo">CAU/RS</p>
+                            <p class="text-xs sm:text-sm text-grafite-muted mt-0.5">Reg. A466620 ativo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Visual (5 colunas) - Composição Editorial: Escritório + Projeto Autoral -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Moldura Principal (Arquiteta / Atelier / Croquis) -->
+                        <div class="rounded-3xl overflow-hidden shadow-card border-4 border-white bg-linho-200 aspect-[4/5] relative">
+                            <img 
+                                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=85" 
+                                onerror="this.src='https://placehold.co/800x1000/E8E0D4/2F4337?text=Tita+Piva+Arquitetura'"
+                                alt="Mesa de trabalho de arquitetura com plantas baixas, maquetes e materiais naturais" 
+                                class="w-full h-full object-cover object-center"
+                            >
+                            <div class="absolute inset-0 bg-gradient-to-t from-musgo-dark/70 via-transparent to-transparent"></div>
+                            
+                            <!-- Legenda dentro da foto -->
+                            <div class="absolute bottom-5 left-5 right-5 text-white">
+                                <p class="text-xs uppercase tracking-widest text-linho-200 mb-1">Ateliê em Carazinho • RS</p>
+                                <p class="font-serif text-xl italic leading-snug">
+                                    "Cada projeto nasce de uma escuta atenta e do respeito ao investimento de cada cliente."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card Flutuante 1: Maquete / Projeto 3D Autoral (Inspirado na imagem do Google Meu Negócio) -->
+                        <div class="hidden sm:block absolute -left-8 top-8 w-44 rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-white">
+                            <img 
+                                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=450&q=80" 
+                                onerror="this.src='https://placehold.co/400x300/FAF8F5/B06A4B?text=Projeto+Residencial'"
+                                alt="Maquete eletrônica e fachada residencial contemporânea" 
+                                class="w-full h-28 object-cover"
+                            >
+                            <div class="p-2.5 bg-white">
+                                <p class="text-[11px] font-semibold text-musgo leading-tight">Estudo Volumétrico & 3D</p>
+                                <p class="text-[10px] text-grafite-muted">Visualização clara antes da obra</p>
+                            </div>
+                        </div>
+
+                        <!-- Card Flutuante 2: Selo Docente & Experiência -->
+                        <div class="absolute -bottom-5 -right-3 sm:-right-6 bg-white rounded-2xl p-4 shadow-card border border-linho-200 max-w-[230px]">
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-terracota-soft text-terracota flex items-center justify-center shrink-0">
+                                    <i data-lucide="compass" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-grafite">Rigor Técnico & Sensibilidade</p>
+                                    <p class="text-[11px] text-grafite-muted mt-0.5 leading-snug">
+                                        Experiência prática de obra aliada à vivência acadêmica.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SEÇÃO DE ÁREAS DE ATUAÇÃO (SERVIÇOS) -->
+    <section id="projetos" class="py-20 lg:py-28 bg-white border-y border-linho-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Cabeçalho da Seção -->
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-terracota">Áreas de Atuação</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-grafite leading-tight">
+                    Soluções completas para morar, trabalhar e investir com tranquilidade
+                </h2>
+                <p class="text-base sm:text-lg text-grafite-muted">
+                    Do primeiro traço no papel ao detalhamento executivo, planejamos espaços que equilibram beleza atemporal, conforto térmico e funcionalidade no dia a dia.
+                </p>
+            </div>
+
+            <!-- Grid de 3 Cards Elegantes -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Projetos Residenciais -->
+                <article id="projeto-residencial" class="group rounded-3xl bg-linho-50 border border-linho-200 overflow-hidden shadow-soft hover:shadow-card transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-[16/11] overflow-hidden bg-linho-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
+                            onerror="this.src='https://placehold.co/800x550/E8E0D4/2F4337?text=Projetos+Residenciais'"
+                            alt="Casa contemporânea acolhedora com jardim e iluminação natural" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        >
+                        <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm text-xs font-semibold text-musgo shadow-sm">
+                            01 • Residencial
+                        </div>
+                    </div>
+                    <div class="p-7 sm:p-8 flex-1 flex flex-col justify-between space-y-6">
+                        <div class="space-y-3">
+                            <h3 class="font-serif text-2xl sm:text-[28px] font-semibold text-grafite group-hover:text-musgo transition-colors">
+                                Projetos Residenciais
+                            </h3>
+                            <p class="text-grafite-muted text-sm sm:text-base leading-relaxed">
+                                Casas planejadas do zero para unir conforto, estética e funcionalidade para a família. Pensamos a implantação no terreno, insolação, ventilação e a rotina real de quem vai viver ali.
+                            </p>
+                            <ul class="pt-2 space-y-2 text-xs sm:text-sm text-grafite">
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracota shrink-0"></i>
+                                    <span>Estudo preliminar e maquete 3D realista</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracota shrink-0"></i>
+                                    <span>Aprovação legal na Prefeitura e condomínios</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracota shrink-0"></i>
+                                    <span>Projeto executivo detalhado para obra segura</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-linho-200">
+                            <button onclick="openBudgetModal('Projeto Residencial')" class="w-full py-3 px-4 rounded-xl bg-white hover:bg-musgo text-musgo hover:text-white border border-linho-300 hover:border-musgo font-medium text-sm transition-all flex items-center justify-center gap-2">
+                                <span>Orçar Projeto Residencial</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2: Arquitetura Comercial -->
+                <article id="projeto-comercial" class="group rounded-3xl bg-linho-50 border border-linho-200 overflow-hidden shadow-soft hover:shadow-card transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-[16/11] overflow-hidden bg-linho-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
+                            onerror="this.src='https://placehold.co/800x550/E8E0D4/2F4337?text=Arquitetura+Comercial'"
+                            alt="Espaço comercial moderno, iluminado e acolhedor para clientes" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        >
+                        <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm text-xs font-semibold text-musgo shadow-sm">
+                            02 • Comercial & Corporativo
+                        </div>
+                    </div>
+                    <div class="p-7 sm:p-8 flex-1 flex flex-col justify-between space-y-6">
+                        <div class="space-y-3">
+                            <h3 class="font-serif text-2xl sm:text-[28px] font-semibold text-grafite group-hover:text-musgo transition-colors">
+                                Arquitetura Comercial
+                            </h3>
+                            <p class="text-grafite-muted text-sm sm:text-base leading-relaxed">
+                                Espaços estratégicos para empresas, lojas e clínicas que valorizam a marca e a experiência do cliente. Aliamos fluxo operacional inteligente, ergonomia e identidade visual marcante.
+                            </p>
+                            <ul class="pt-2 space-y-2 text-xs sm:text-sm text-grafite">
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracota shrink-0"></i>
+                                    <span>Lojas, clínicas, escritórios e gastronomia</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracota shrink-0"></i>
+                                    <span>Adequação às normas técnicas e acessibilidade</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracota shrink-0"></i>
+                                    <span>Priorização inteligente do investimento</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-linho-200">
+                            <button onclick="openBudgetModal('Arquitetura Comercial')" class="w-full py-3 px-4 rounded-xl bg-white hover:bg-musgo text-musgo hover:text-white border border-linho-300 hover:border-musgo font-medium text-sm transition-all flex items-center justify-center gap-2">
+                                <span>Orçar Projeto Comercial</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3: Design de Interiores e Reformas -->
+                <article id="projeto-interiores" class="group rounded-3xl bg-linho-50 border border-linho-200 overflow-hidden shadow-soft hover:shadow-card transition-all duration-300 flex flex-col">
+                    <div class="relative aspect-[16/11] overflow-hidden bg-linho-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" 
+                            onerror="this.src='https://placehold.co/800x550/E8E0D4/2F4337?text=Interiores+e+Reformas'"
+                            alt="Ambiente interno aconchegante com madeira natural, iluminação quente e marcenaria sob medida" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        >
+                        <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm text-xs font-semibold text-musgo shadow-sm">
+                            03 • Interiores & Reformas
+                        </div>
+                    </div>
+                    <div class="p-7 sm:p-8 flex-1 flex flex-col justify-between space-y-6">
+                        <div class="space-y-3">
+                            <h3 class="font-serif text-2xl sm:text-[28px] font-semibold text-grafite group-hover:text-musgo transition-colors">
+                                Design de Interiores e Reformas
+                            </h3>
+                            <p class="text-grafite-muted text-sm sm:text-base leading-relaxed">
+                                Remodelação inteligente de ambientes com alinhamento claro de expectativas e prazos. Transformamos imóveis existentes sem desperdícios, valorizando o que já funciona.
+                            </p>
+                            <ul class="pt-2 space-y-2 text-xs sm:text-sm text-grafite">
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracota shrink-0"></i>
+                                    <span>Detalhamento de marcenaria, iluminação e gesso</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracota shrink-0"></i>
+                                    <span>Especificação consciente de revestimentos</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracota shrink-0"></i>
+                                    <span>Planejamento de etapas para evitar desgaste</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-linho-200">
+                            <button onclick="openBudgetModal('Design de Interiores / Reforma')" class="w-full py-3 px-4 rounded-xl bg-white hover:bg-musgo text-musgo hover:text-white border border-linho-300 hover:border-musgo font-medium text-sm transition-all flex items-center justify-center gap-2">
+                                <span>Orçar Interiores ou Reforma</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SEÇÃO "COMO TRABALHAMOS" (DIFERENCIAL DE ALINHAMENTO) -->
+    <section id="metodologia" class="py-20 lg:py-28 bg-linho-100/70 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Bloco Superior: Empatia com as dúvidas reais do cliente -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-16">
+                <div class="lg:col-span-5 space-y-5">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-terracota">Metodologia & Transparência</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-[44px] font-semibold text-grafite leading-tight">
+                        Expectativas alinhadas desde o início para evitar dores de cabeça lá na frente.
+                    </h2>
+                    <p class="text-grafite-muted text-base leading-relaxed">
+                        Construir ou reformar envolve sonhos e recursos importantes. Por isso, nosso método prioriza clareza técnica, diálogo franco e decisões conscientes antes mesmo do primeiro tijolo.
+                    </p>
+                </div>
+
+                <!-- Card de Identificação ("Se você está neste momento...") -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-soft border border-linho-200">
+                    <p class="text-xs font-bold uppercase tracking-wider text-musgo mb-4 flex items-center gap-2">
+                        <i data-lucide="message-square-quote" class="w-4 h-4 text-terracota"></i>
+                        Você se identifica com algum destes momentos?
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                        <div class="p-4 rounded-2xl bg-linho-50 border border-linho-200/80">
+                            <p class="font-serif text-lg italic text-grafite font-medium">“Quero construir, mas não sei por onde começar.”</p>
+                            <p class="text-xs text-grafite-muted mt-1">Orientamos desde a análise do terreno até a aprovação legal.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-linho-50 border border-linho-200/80">
+                            <p class="font-serif text-lg italic text-grafite font-medium">“Quero reformar, mas tenho medo de me incomodar.”</p>
+                            <p class="text-xs text-grafite-muted mt-1">Previsibilidade técnica para reduzir imprevistos e retrabalhos.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-linho-50 border border-linho-200/80">
+                            <p class="font-serif text-lg italic text-grafite font-medium">“Vou abrir meu negócio, mas não sei o que priorizar.”</p>
+                            <p class="text-xs text-grafite-muted mt-1">Foco estratégico no que traz retorno e encanta seu cliente.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-linho-50 border border-linho-200/80">
+                            <p class="font-serif text-lg italic text-grafite font-medium">“Quero um espaço bonito, mas que funcione de verdade.”</p>
+                            <p class="text-xs text-grafite-muted mt-1">Estética atemporal pensada para a manutenção e uso real.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 Etapas Claras de Projeto -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Etapa 1 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-7 border border-linho-200 shadow-sm relative">
+                    <div class="w-11 h-11 rounded-xl bg-musgo text-linho-50 font-serif text-xl font-bold flex items-center justify-center mb-5">
+                        01
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-grafite mb-2">Escuta & Briefing Real</h3>
+                    <p class="text-sm text-grafite-muted leading-relaxed">
+                        Conversamos sobre sua rotina, necessidades da família ou empresa, prazos desejados e expectativa de investimento para alinhar a viabilidade desde o primeiro dia.
+                    </p>
+                </div>
+
+                <!-- Etapa 2 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-7 border border-linho-200 shadow-sm relative">
+                    <div class="w-11 h-11 rounded-xl bg-musgo text-linho-50 font-serif text-xl font-bold flex items-center justify-center mb-5">
+                        02
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-grafite mb-2">Estudo Preliminar & 3D</h3>
+                    <p class="text-sm text-grafite-muted leading-relaxed">
+                        Desenvolvemos a planta funcional e a volumetria em 3D para você compreender cada ambiente, iluminação e circulação com total clareza antes de aprovar.
+                    </p>
+                </div>
+
+                <!-- Etapa 3 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-7 border border-linho-200 shadow-sm relative">
+                    <div class="w-11 h-11 rounded-xl bg-musgo text-linho-50 font-serif text-xl font-bold flex items-center justify-center mb-5">
+                        03
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-grafite mb-2">Projeto Legal & Executivo</h3>
+                    <p class="text-sm text-grafite-muted leading-relaxed">
+                        Elaboração completa das plantas técnicas, especificações de materiais, pontos elétricos/hidráulicos e trâmites de aprovação junto aos órgãos competentes.
+                    </p>
+                </div>
+
+                <!-- Etapa 4 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-7 border border-linho-200 shadow-sm relative">
+                    <div class="w-11 h-11 rounded-xl bg-terracota text-white font-serif text-xl font-bold flex items-center justify-center mb-5">
+                        04
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-grafite mb-2">Acompanhamento Técnico</h3>
+                    <p class="text-sm text-grafite-muted leading-relaxed">
+                        Suporte técnico e visitas de orientação para garantir que o que foi planejado e combinado seja executado com fidelidade, segurança e tranquilidade.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. SEÇÃO DE AUTORIDADE E TRAJETÓRIA (SOBRE TITA PIVA) -->
+    <section id="sobre" class="py-20 lg:py-28 bg-white border-t border-linho-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Coluna da Imagem / Retrato Profissional (5 colunas) -->
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="relative mx-auto max-w-md">
+                        <div class="rounded-3xl overflow-hidden shadow-card border border-linho-200 bg-linho-100 aspect-[4/5]">
+                            <img 
+                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85" 
+                                onerror="this.src='https://placehold.co/800x1000/E8E0D4/2F4337?text=Arq.+Tita+Piva'"
+                                alt="Arquiteta e Urbanista Tita Piva em seu escritório" 
+                                class="w-full h-full object-cover object-top"
+                            >
+                        </div>
+
+                        <!-- Selo de Avaliação Google 5.0 Estrelas -->
+                        <div class="mt-6 sm:mt-0 sm:absolute sm:-bottom-6 sm:left-6 sm:right-6 bg-musgo text-linho-50 rounded-2xl p-5 shadow-xl border border-musgo-light">
+                            <div class="flex items-center justify-between gap-4">
+                                <div>
+                                    <div class="flex items-center gap-1 text-amber-400 mb-1">
+                                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                        <span class="text-white font-bold text-sm ml-1.5">5.0</span>
+                                    </div>
+                                    <p class="text-xs text-linho-200">Avaliação máxima de clientes no Google</p>
+                                </div>
+                                <div class="text-right shrink-0">
+                                    <span class="inline-block px-2.5 py-1 rounded-lg bg-white/10 text-[11px] font-semibold tracking-wider uppercase">
+                                        Carazinho • RS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna da Biografia & Credenciais (7 colunas) -->
+                <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-terracota">Sobre a Arquiteta</span>
+                    
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-grafite leading-tight">
+                        Tita Piva: mais de duas décadas dedicadas à arquitetura com propósito e rigor técnico.
+                    </h2>
+
+                    <div class="space-y-4 text-grafite-muted text-base sm:text-[17px] leading-relaxed">
+                        <p>
+                            À frente do escritório <strong class="text-grafite font-semibold">Tita Piva Arquitetura & Urbanismo</strong> (CAU/RS A466620), atua há <strong class="text-grafite font-semibold">mais de 25 anos</strong> transformando terrenos, casas e espaços comerciais em Carazinho e região em lugares acolhedores, funcionais e duradouros.
+                        </p>
+                        <p>
+                            Além da prática intensa de projetos e obras, Tita construiu uma sólida trajetória como <strong class="text-grafite font-semibold">professora universitária na formação de novos arquitetos e urbanistas</strong> — uma vivência que mantém seu olhar sempre atualizado, didático e comprometido com a excelência técnica.
+                        </p>
+                        <p>
+                            Sua filosofia resume-se em unir <strong class="text-musgo font-semibold">“escolhas conscientes + vida real”</strong>: traduzir os desejos de cada cliente em soluções viáveis, bem resolvidas e livres de modismos passageiros que encarecem a obra sem trazer benefício real.
+                        </p>
+                    </div>
+
+                    <!-- Pilares de Autoridade -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+                        <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-linho-50 border border-linho-200">
+                            <div class="w-10 h-10 rounded-xl bg-musgo-soft text-musgo flex items-center justify-center shrink-0">
+                                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-grafite text-sm">Docência Universitária</h3>
+                                <p class="text-xs text-grafite-muted mt-1 leading-relaxed">
+                                    Anos formando novos profissionais com base técnica sólida e visão humanista.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-linho-50 border border-linho-200">
+                            <div class="w-10 h-10 rounded-xl bg-terracota-soft text-terracota flex items-center justify-center shrink-0">
+                                <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-grafite text-sm">Segurança & Ética</h3>
+                                <p class="text-xs text-grafite-muted mt-1 leading-relaxed">
+                                    Registro ativo CAU/RS A466620 e compromisso integral com o cliente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento / Prova Social Google -->
+                    <div class="p-5 sm:p-6 rounded-2xl bg-linho-100/80 border-l-4 border-terracota">
+                        <p class="font-serif text-lg sm:text-xl italic text-grafite leading-relaxed">
+                            “Atendimento impecável, muita experiência e sensibilidade para entender exatamente o que precisávamos. Traz muita segurança em todas as etapas do projeto.”
+                        </p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-grafite-muted">
+                            <span class="font-semibold text-grafite">— Avaliação verificada de cliente • Google (5,0 ★)</span>
+                            <span>Carazinho, RS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SEÇÃO DE CONTATO E LOCALIZAÇÃO EM CARAZINHO -->
+    <section id="contato" class="py-20 lg:py-28 bg-musgo text-linho-50 relative overflow-hidden">
+        <!-- Textura sutil -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#FAF8F5 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Coluna de Chamada Acolhedora e Canais (6 colunas) -->
+                <div class="lg:col-span-6 space-y-7">
+                    <span class="inline-block px-3.5 py-1.5 rounded-full bg-white/10 text-linho-200 text-xs font-semibold uppercase tracking-widest">
+                        Atendimento em Carazinho - RS e Região
+                    </span>
+
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight">
+                        Quer construir, reformar ou abrir seu negócio sem dor de cabeça? Vamos conversar sobre o seu projeto.
+                    </h2>
+
+                    <p class="text-linho-200 text-base sm:text-lg leading-relaxed">
+                        Envie uma mensagem pelo WhatsApp contando brevemente a sua ideia. Teremos prazer em explicar como funciona nossa proposta de trabalho e agendar uma conversa inicial.
+                    </p>
+
+                    <!-- Botão Principal WhatsApp -->
+                    <div class="pt-1">
+                        <button onclick="openBudgetModal('Contato Final')" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-whatsapp hover:bg-whatsapp-hover text-white font-semibold text-base shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                            <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.473 1.332 4.986L2 22l5.184-1.359a9.927 9.927 0 0 0 4.847 1.258h.004c5.515 0 9.969-4.454 9.969-9.969 0-2.664-1.037-5.168-2.921-7.052A9.903 9.903 0 0 0 12.031 2zm5.822 14.274c-.246.693-1.428 1.326-1.984 1.41-.514.078-1.164.111-1.879-.116-.434-.138-.99-.322-1.703-.63-2.996-1.294-4.953-4.312-5.103-4.512-.149-.2-1.219-1.622-1.219-3.094 0-1.472.771-2.196 1.045-2.495.274-.299.598-.374.797-.374.199 0 .398.002.573.01.184.009.43-.07.673.514.249.598.847 2.07.921 2.22.075.149.125.324.025.523-.1.2-.149.324-.299.498-.149.175-.314.39-.448.524-.149.149-.305.311-.131.61.174.299.774 1.277 1.662 2.069 1.142 1.018 2.104 1.334 2.403 1.483.299.15.473.125.648-.075.174-.199.747-.872.946-1.171.2-.299.399-.249.673-.15.274.1 1.744.822 2.043.972.299.15.498.224.573.349.074.125.074.722-.172 1.415z"/>
+                            </svg>
+                            <span>Conversar no WhatsApp Agora</span>
+                        </button>
+                    </div>
+
+                    <!-- Informações de Localização e Redes -->
+                    <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-white/15 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-terracota-light shrink-0 mt-0.5"></i>
+                            <div>
+                                <p class="font-semibold text-white">Localização</p>
+                                <p class="text-linho-200 mt-0.5">Carazinho, Rio Grande do Sul</p>
+                                <p class="text-xs text-linho-300">Atendimento presencial e online</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="instagram" class="w-5 h-5 text-terracota-light shrink-0 mt-0.5"></i>
+                            <div>
+                                <p class="font-semibold text-white">Acompanhe no Instagram</p>
+                                <a href="https://instagram.com/titapiva.arq" target="_blank" rel="noopener noreferrer" class="text-linho-200 hover:text-white underline decoration-terracota-light underline-offset-4 mt-0.5 inline-block">
+                                    @titapiva.arq
+                                </a>
+                                <p class="text-xs text-linho-300">Dicas de obra, rotina e projetos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna do Mapa Integrado de Carazinho - RS (6 colunas) -->
+                <div class="lg:col-span-6">
+                    <div class="bg-white p-3 rounded-3xl shadow-2xl border border-white/20">
+                        <div class="rounded-2xl overflow-hidden aspect-[16/11] bg-linho-200 relative">
+                            <iframe 
+                                title="Mapa de localização - Tita Piva Arquitetura em Carazinho - RS"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56244.49816748686!2d-52.82563435!3d-28.2952188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd493700000001%3A0x8f2d393031000000!2sCarazinho%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                                class="w-full h-full border-0" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="px-3 pt-3 pb-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-grafite">
+                            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium">
+                                <span class="w-2.5 h-2.5 rounded-full bg-whatsapp"></span>
+                                <span>Tita Piva Arquitetura • Carazinho - RS</span>
+                            </div>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Tita+Piva+Arquitetura+Carazinho+RS" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-terracota hover:text-terracota-dark flex items-center gap-1">
+                                <span>Abrir no Google Maps</span>
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. RODAPÉ -->
+    <footer class="bg-musgo-dark text-linho-200 py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <!-- Identidade no Rodapé -->
+                <div class="text-center md:text-left">
+                    <p class="font-serif text-2xl font-semibold text-white">
+                        Tita Piva Arquitetura & Urbanismo
+                    </p>
+                    <p class="text-sm text-linho-300 mt-1">
+                        Tita Piva Arquitetura — <strong class="text-linho-100 font-medium">CAU/RS A466620</strong> — Carazinho, RS
+                    </p>
+                </div>
+
+                <!-- Links Sociais -->
+                <div class="flex items-center gap-4">
+                    <a href="https://instagram.com/titapiva.arq" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-linho-100 text-sm transition-colors border border-white/10">
+                        <i data-lucide="instagram" class="w-4 h-4 text-terracota-light"></i>
+                        <span>@titapiva.arq</span>
+                    </a>
+
+                    <button onclick="openBudgetModal('Rodapé')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white text-sm font-medium transition-colors">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-linho-300/80">
+                <p>© <span id="current-year"></span> Tita Piva Arquitetura. Todos os direitos reservados.</p>
+                <p>Escolhas conscientes + vida real • Arquitetura Residencial, Comercial e Interiores.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO DE WHATSAPP FLUTUANTE VISÍVEL O TEMPO TODO -->
+    <button 
+        onclick="openBudgetModal('Botão Flutuante')" 
+        aria-label="Solicitar Orçamento pelo WhatsApp"
+        class="fixed bottom-5 right-5 sm:bottom-7 sm:right-7 z-50 flex items-center gap-3 bg-whatsapp hover:bg-whatsapp-hover text-white px-4 py-3.5 sm:px-5 sm:py-4 rounded-full shadow-2xl shadow-black/25 transition-all duration-300 animate-whatsapp group">
+        <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.473 1.332 4.986L2 22l5.184-1.359a9.927 9.927 0 0 0 4.847 1.258h.004c5.515 0 9.969-4.454 9.969-9.969 0-2.664-1.037-5.168-2.921-7.052A9.903 9.903 0 0 0 12.031 2zm5.822 14.274c-.246.693-1.428 1.326-1.984 1.41-.514.078-1.164.111-1.879-.116-.434-.138-.99-.322-1.703-.63-2.996-1.294-4.953-4.312-5.103-4.512-.149-.2-1.219-1.622-1.219-3.094 0-1.472.771-2.196 1.045-2.495.274-.299.598-.374.797-.374.199 0 .398.002.573.01.184.009.43-.07.673.514.249.598.847 2.07.921 2.22.075.149.125.324.025.523-.1.2-.149.324-.299.498-.149.175-.314.39-.448.524-.149.149-.305.311-.131.61.174.299.774 1.277 1.662 2.069 1.142 1.018 2.104 1.334 2.403 1.483.299.15.473.125.648-.075.174-.199.747-.872.946-1.171.2-.299.399-.249.673-.15.274.1 1.744.822 2.043.972.299.15.498.224.573.349.074.125.074.722-.172 1.415z"/>
+        </svg>
+        <span class="hidden sm:inline font-semibold text-sm tracking-wide">Orçamento via WhatsApp</span>
+    </button>
+
+    <!-- MODAL DE PRÉ-ATENDIMENTO INTELIGENTE PARA WHATSAPP (Qualifica o lead e facilita a conversa) -->
+    <div id="budget-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-grafite/60 backdrop-blur-sm">
+        <div class="bg-linho-50 rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-linho-200 relative animate-fadeIn">
+            <button onclick="closeBudgetModal()" aria-label="Fechar janela" class="absolute top-5 right-5 p-2 rounded-full hover:bg-linho-200 text-grafite-muted transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="space-y-2 mb-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-terracota">Atendimento Direto</span>
+                <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-grafite">
+                    Vamos conversar sobre o seu projeto
+                </h3>
+                <p class="text-sm text-grafite-muted">
+                    Preencha rapidamente abaixo para iniciar a conversa no WhatsApp com a mensagem já organizada para a Arq. Tita Piva.
+                </p>
+            </div>
+
+            <form id="whatsapp-form" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                <div>
+                    <label for="client-name" class="block text-xs font-semibold uppercase tracking-wider text-grafite mb-1.5">Seu Nome</label>
+                    <input type="text" id="client-name" required placeholder="Ex: Maria Clara" class="w-full px-4 py-3 rounded-xl bg-white border border-linho-300 text-grafite text-sm focus:outline-none focus:border-musgo">
+                </div>
+
+                <div>
+                    <label for="project-type" class="block text-xs font-semibold uppercase tracking-wider text-grafite mb-1.5">Tipo de Projeto</label>
+                    <select id="project-type" class="w-full px-4 py-3 rounded-xl bg-white border border-linho-300 text-grafite text-sm focus:outline-none focus:border-musgo">
+                        <option value="Projeto Residencial (Casa do zero)">Projeto Residencial (Casa do zero)</option>
+                        <option value="Arquitetura Comercial (Loja, Clínica, Empresa)">Arquitetura Comercial (Loja, Clínica, Empresa)</option>
+                        <option value="Design de Interiores ou Reforma">Design de Interiores ou Reforma</option>
+                        <option value="Consultoria / Outro assunto">Consultoria / Outro assunto</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="project-city" class="block text-xs font-semibold uppercase tracking-wider text-grafite mb-1.5">Cidade do Imóvel / Terreno</label>
+                    <input type="text" id="project-city" value="Carazinho - RS" class="w-full px-4 py-3 rounded-xl bg-white border border-linho-300 text-grafite text-sm focus:outline-none focus:border-musgo">
+                </div>
+
+                <div>
+                    <label for="project-notes" class="block text-xs font-semibold uppercase tracking-wider text-grafite mb-1.5">Conte um pouco da sua ideia (opcional)</label>
+                    <textarea id="project-notes" rows="2" placeholder="Ex: Já tenho o terreno e gostaria de iniciar o projeto este semestre..." class="w-full px-4 py-2.5 rounded-xl bg-white border border-linho-300 text-grafite text-sm focus:outline-none focus:border-musgo"></textarea>
+                </div>
+
+                <div class="pt-2 flex flex-col gap-2.5">
+                    <button type="submit" class="w-full py-3.5 px-5 rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-white font-semibold text-sm flex items-center justify-center gap-2 shadow-md transition-colors">
+                        <i data-lucide="send" class="w-4 h-4"></i>
+                        <span>Iniciar Conversa no WhatsApp</span>
+                    </button>
+                    <a href="https://linktr.ee/titapiva" target="_blank" rel="noopener noreferrer" class="text-center text-xs text-grafite-muted hover:text-musgo underline underline-offset-2 py-1">
+                        Ou acessar links oficiais (linktr.ee/titapiva)
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts de Interatividade -->
+    <script>
+        // Inicializar ícones Lucide
+        lucide.createIcons();
+
+        // Ano atual no rodapé
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Controle do Menu Mobile
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Controle do Modal de Orçamento WhatsApp
+        const budgetModal = document.getElementById('budget-modal');
+        const projectTypeSelect = document.getElementById('project-type');
+
+        function openBudgetModal(contexto) {
+            if (contexto) {
+                if (contexto.includes('Residencial')) {
+                    projectTypeSelect.value = 'Projeto Residencial (Casa do zero)';
+                } else if (contexto.includes('Comercial')) {
+                    projectTypeSelect.value = 'Arquitetura Comercial (Loja, Clínica, Empresa)';
+                } else if (contexto.includes('Interiores')) {
+                    projectTypeSelect.value = 'Design de Interiores ou Reforma';
+                }
+            }
+            budgetModal.classList.remove('hidden');
+            budgetModal.classList.add('flex');
+        }
+
+        function closeBudgetModal() {
+            budgetModal.classList.add('hidden');
+            budgetModal.classList.remove('flex');
+        }
+
+        // Fechar modal clicando fora do card
+        budgetModal.addEventListener('click', (e) => {
+            if (e.target === budgetModal) {
+                closeBudgetModal();
+            }
+        });
+
+        // Envio formatado para WhatsApp
+        // Nota: Substitua o número abaixo pelo telefone oficial do escritório com DDI 55 + DDD 54
+        const WHATSAPP_NUMBER = '5554999999999';
+
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            const nome = document.getElementById('client-name').value.trim();
+            const tipo = document.getElementById('project-type').value;
+            const cidade = document.getElementById('project-city').value.trim();
+            const notas = document.getElementById('project-notes').value.trim();
+
+            let mensagem = `Olá, Arq. Tita Piva! Tudo bem?\n\n`;
+            mensagem += `Meu nome é *${nome}*, vim pelo site e gostaria de solicitar informações sobre orçamento de projeto.\n\n`;
+            mensagem += `• *Interesse:* ${tipo}\n`;
+            if (cidade) mensagem += `• *Localidade:* ${cidade}\n`;
+            if (notas) mensagem += `• *Detalhes:* ${notas}\n`;
+            mensagem += `\nAguardo seu retorno!`;
+
+            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+            closeBudgetModal();
+        }
+    </script>
+</body>
+</html>
